@@ -28,7 +28,7 @@ There's some "middleware" here (`src/users/middleware.rs`) that makes it easy to
 
 ``` rust
 use users::middleware::UserAuthentication;
-use utils::responses::{FutureHttpResponse, future_redirect};
+use utils::responses::{FutureResponse, future_redirect};
 
 fn view(request: HttpRequest) -> FutureResponse {
     // Check the session is valid, without a database hit to load the user
