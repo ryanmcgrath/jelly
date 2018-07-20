@@ -15,6 +15,8 @@ You might also not be interested in this, and that's cool too. It's licensed as 
 - `diesel migration run` to create the user database table
 - `cargo run` to... well, run it. Depending on whether you have `diesel_cli` installed you might need that too.
 
+_Protip: You can integrate [zxcvbn](https://github.com/shssoichiro/zxcvbn-rs) with the existing Validator infrastructure. I didn't rip it out of my stuff for some other reasons, but it works really well!_
+
 ## Notes
 This is probably still a bit rough around the edges, since I ripped it out of an existing project of mine, but the key things I wanted to solve were:
 
