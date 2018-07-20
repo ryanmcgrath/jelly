@@ -1,0 +1,33 @@
+[package]
+name = "jelly"
+version = "0.1.0"
+authors = ["Ryan McGrath <ryan@rymc.io>"]
+
+[dependencies]
+actix = "0.5"
+actix-web = { version = "0.6.15", features = ["alpn", "session"] }
+actix-redis = { git = "https://github.com/ryanmcgrath/actix-redis.git", rev = "6c8801dc8caebe901257e8ea41e465e62db94c3f" }
+sentry = "0.6.1"
+sentry-actix = "0.1.0"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+chrono = "0.4.4"
+diesel = { version = "<= 1.3.2", features = ["postgres", "chrono", "serde_json", "r2d2"] }
+dotenv = "0.13.0"
+askama = "0.7.0"
+num_cpus = "1.0"
+futures = "0.1.22"
+log = "0.4.0"
+env_logger = "0.5.10"
+djangohashers = { version = "^0.3", features = ["fpbkdf2"] }
+validator = { version = "0.7.0", features = [] }
+validator_derive = "0.7.1"
+uuid = { version = "0.6", features = ["v4"] }
+zxcvbn = "1.0.0"
+
+[build-dependencies]
+askama = "0.7"
+
+[profile.release]
+lto = true
