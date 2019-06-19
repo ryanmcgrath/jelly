@@ -1,3 +1,6 @@
+# NOTICE
+This project is archived, as the actix-web 1.0 API is a bit different. It's kept up, though, for insight on how some general patterns work.
+
 # Jelly
 This is a sample repository showcasing a rather straightforward way to handle user sessions, signup, and authentication in an [actix-web](https://actix.rs) project. I extracted it from something I'm working on as I realized that it can be otherwise tricky to figure out at a glance how all of this fits together (actix-web is still fairly fast moving, and the docs can be... rough).
 
